@@ -1,7 +1,11 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from 'redux'
+import BooksReducer from './reducer_books'
+
+// books key, BooksReducer value
+// import BooksReducer imports the default function from reducer_books
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  books: BooksReducer,
 });
 
-export default rootReducer;
+export default rootReducer
